@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Form</title>
+<link rel="styleSheet" href="style.css">
+</head>
+<body>
+	
+	<h1>Registration Form</h1>
+	<div class="form-container">
+		<form action="register" method="post">
+			<label>First name</label>
+			<input type="text" name="fname">
+			<label>Last name</label>
+			<input type="text" name="lname">
+			<label>Email</label>
+			<input type="email" name="email">
+			
+	    	<label>Mobile Number</label>
+	    	<input type="tel" name="mobile">
+	    	<label>Address</label>
+	    	<textarea name="address" rows="5"></textarea>
+	    	<div class="gender">
+	    			<label>
+			    	 	<input type="radio" name="male" value="male" required>
+		         		 Male
+        		</label>
+        		<label>
+			          <input type="radio" name="female" value="female">
+			          Female
+        		</label>
+	    	</div>
+	    	 
+	    	<label>DOB</label>
+	    	<input type="date" name="DOB">
+	    	
+	    	 <label>City</label>
+	    	<input type="text" name="city">
+	    	
+	    	<label>state</label>
+	    	<input type="number" name="state">
+	
+	    	<label>Country</label>
+	    	<input type="text" name="Country">
+	    	
+	    	<label>Age</label>
+	    	<input type="text" name="age">
+	   		
+	   		<label>Degree</label>
+	    	<select  name="degree" class="degree-select">
+	    		<option value="select">--select--</option>
+		    	<option value="Computer">Computer</option>
+		    	<option value="Mechanical">Mechanical</option>
+		    	<option value="Civil">Civil</option>
+		    	<option value="ENTC">ENTC</option>
+	    	</select>
+	    	
+	    	<label>Passing Year</label>
+	    	<select  name="passing" class="passing-select">
+	    		<option value="select">--select--</option>
+		    	<option value="2023">2023</option>
+		    	<option value="2024">2024</option>
+	    	</select>
+	
+	    
+	    	<label>Password</label>
+	    	<input type="password" name="Password">	
+	    	
+	    	<button id="submit-btn">Submit</button>		
+		</form>
+	</div>
+</body>
+</html>
